@@ -1,0 +1,23 @@
+<table mat-table [dataSource]="dataSource">
+
+  <ng-container matColumnDef="stock_id">
+    <th mat-header-cell *matHeaderCellDef>Stock ID</th>
+    <td mat-cell *matCellDef="let p"> {{p.stock_id}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="date">
+    <th mat-header-cell *matHeaderCellDef>Date</th>
+    <td mat-cell *matCellDef="let p"> {{p.date}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="value">
+    <th mat-header-cell *matHeaderCellDef>Value</th>
+    <td mat-cell *matCellDef="let p"> {{p.value}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let p; columns: displayedColumns;"
+              (click)="stockSelected.emit(p)">
+  </tr>
+
+</table>

@@ -1,0 +1,7 @@
+<table-scrolling-viewport itemSize="50"
+                          [totalItems]="stock.length"
+                          (itemsRangeChange)="updateStockSlice($event)">
+  <stocks-table [stock]="stockSlice"
+                (stockSelected)="stockSelected.emit($event)">
+  </stocks-table>
+</table-scrolling-viewport>

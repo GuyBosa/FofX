@@ -1,0 +1,15 @@
+<header>
+	<mat-toolbar color="primary">
+    Stocks
+  </mat-toolbar>
+</header>
+<main>
+  <mat-card>
+    <mat-card-title>Stock Values</mat-card-title>
+    <mat-card-content>
+      <stocks-viewport [stock]="stock"
+                      (stockSelected)="doSomething($event)">
+      </stocks-viewport>
+    </mat-card-content>
+  </mat-card>
+</main>
