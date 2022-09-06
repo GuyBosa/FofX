@@ -5,7 +5,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0 and Angular Material
 
-  * [:computer: Code Examples](#computer-code-examples)
+  * [:computer: Code Examples]
 
 ## Make sure you have git installed on your PC. See https://git-scm.com/downloads for help. 
 ## Make sure you have node installed on your PC. See https://nodejs.org/en/download/ for help. 
